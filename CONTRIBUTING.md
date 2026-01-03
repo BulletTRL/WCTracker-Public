@@ -4,7 +4,6 @@ Thanks for the interest. WC Tracker is in active development.
 
 ## Current policy
 - Issues: welcome (clear repro steps and screenshots help a lot).
-- Pull requests: by request or after discussing the change.
 
 ## Development quickstart
 - npm install
@@ -17,3 +16,4 @@ Thanks for the interest. WC Tracker is in active development.
 - User overrides go under user/ and should not be committed.
 
 If you want to help with data cleanup or missing quests, open an issue with sources and evidence.
+
