@@ -1,4 +1,22 @@
-﻿# Release Notes
+# Release Notes
+## v1.2.3 (1/5/2026)
+- Re-synced hideout requirements, rewards, and timings for accuracy.
+- Added hideout upgrade flow with saved levels and max-level messaging.
+- Item tracker now includes hideout requirements (next as active, later as future) and ignores currency entries.
+- Hideout item tracker now skips locked modules and respects stored module levels.
+- Added PvP/PvE mode switching with optional onboarding per mode and a startup mode prompt.
+- Achievements now share completion across modes by default, with optional per-mode tagging.
+- Removed Defective Wall from hideout data and prerequisites.
+- Added missing Workbench level 3 requirements and effects.
+
+## v1.2.2 (1/4/2026)
+- Fixed quest data issues (maps/prereqs), standardized Labs/Factory labels, and removed Arena-only limits.
+- Hardened quest/progress/achievement loading against UTF-8 BOM errors.
+- Added achievements search and adjusted header layout.
+- Item tracker now shows reward-source counts and improved two-column expansion/spacing.
+- Hideout tracker now includes module grouping, detail panel, icons, and per-level requirements.
+- Hideout modules now show built/ready states and hide locked modules until prerequisites are met.
+- Hideout unlock lists now surface actual unlocks and hide requirement-only noise.
 
 ## v1.2.1 (1/2/2026)
 - Restore onboarding prereq auto-completion for selected Ref/BTR/Lightkeeper quests while keeping level-based auto-complete excluded for those traders.
@@ -172,3 +190,5 @@
 - Add profile view.
 - Add local storage based profile data.
 - In progress at the time: compiler for public beta, updater, recommendations, mid-wipe start integration, hideout tracking, item tracking, dashboard, achievement tracking.
+
+

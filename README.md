@@ -1,57 +1,43 @@
-﻿# WC Tracker
+# WC Tracker
 
 WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. It focuses on local progress, quest dependency clarity, and item planning for Kappa progression. No accounts, no servers.
 
 ## Highlights
-- Quest tracker with filters for Kappa-only, completion states, maps, traders, and search.
-- Quest flow (tree) view with trader lanes, prerequisites, zoom/pan, and layout overrides.
-- Item tracker that aggregates quest-required items with FIR tags.
-- Achievements tracker with local completion state.
-- Next Tasks recommendations with weighted scoring (Kappa/Lightkeeper pathing, level fit, friction, and item needs).
-- Profile and onboarding flows with edition, faction, level, and quest selection logic.
-- Local JSON storage with user overrides and progress in git-ignored folders.
+- Quest tracker with filters, quest details, and quick actions.
+- Quest tree view with trader lanes, prerequisites, and zoom/pan.
+- Item tracker for quest-required items with FIR tags, reward sources, and hideout requirements.
+- Achievements tracker with search and local completion state.
+- Hideout tracker with per-level requirements, unlocks, and upgrades.
+- Next Tasks recommendations that factor in item needs and progression paths.
+- PvP/PvE modes with separate progress (shared username/edition).
+- Built-in updater tied to GitHub Releases.
 
-## Getting Started (dev)
-- Install Node.js (LTS recommended).
-- Install dependencies:
-  - npm install
-- Run the app:
-  - npm start
-- Run tests:
-  - npm test
-- Rebuild quest directory:
-  - npm run build:quest-directory
-- Build a Windows installer:
-  - npm run dist:win
+## Download and Install
+- Download the latest Windows installer from Releases:
+  https://github.com/BulletTRL/WCTracker-Public/releases
+- Run the installer and launch WC Tracker.
 
-## Build (release checklist)
-1) Update version in package.json
-2) npm install
-3) npm run build:quest-directory
-4) npm test
-5) npm run dist:win
+## Updates
+- The app checks for updates on launch.
+- Use the Update badge in the header to open the updater panel.
 
-Notes:
-- The installer is produced by electron-builder (NSIS) and already compressed.
-- Output goes to dist/ as WCTracker-{version}-win-x64.exe.
+## Getting Started
+1) Launch the app and pick PvP or PvE.
+2) Complete onboarding (callsign, level, edition, starter quests).
+3) Use filters, the quest tree, item tracker, and hideout tracker to plan progression.
 
-## Data and Storage
-- Quest and item data is stored under data/ and is curated from public sources and manual verification.
-- Local user data is stored under user/ (ignored by git).
-- User quest overrides live under user/quests/.
+## Data and Privacy
+All progress is stored locally in JSON files. No accounts or servers are required.
 
 ## Documentation
 - Release notes: public_repo/RELEASES.md
-- Dev log: public_repo/DEVLOG.md
 - Roadmap: public_repo/ROADMAP.md
 - FAQ: public_repo/FAQ.md
-- Contributing: public_repo/CONTRIBUTING.md
+- Screenshots: public_repo/SCREENSHOTS.md
 - Disclaimer: public_repo/DISCLAIMER.md
 
 ## Contact
-For support or feedback, reach out on Discord.
-
-- Discord: XotiicWC
+Discord: XotiicWC
 
 ## Credits
 - Escape from Tarkov Wiki (quest data references and documentation)

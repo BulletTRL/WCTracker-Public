@@ -221,3 +221,73 @@ Changes:
 - Documented Next Tasks recommendations and item badges
 - Updated build for v1.2.1 distribution
 
+## 1/4/2026 - WC Tracker v1.2.2
+Changes:
+- Fixed quest JSON/map issues, standardized map labels (Labs/Factory), removed Arena-only limits, and normalized filters to keep renamed maps visible
+- Corrected "What's on the Flash Drive?" prereq text so Shady Business, Golden Swag, and The Extortionist link properly
+- Updated quest map requirements for cultist/raider/rogue objectives and reverted non-cultist map additions
+- Hardened quest/progress/achievement loading against UTF-8 BOM
+- Added public repo documentation set and refreshed the roadmap
+- Fixed the Through Another's Eyes achievement icon reference
+- Centered the onboarding quest input
+- Added achievement search with refined sizing/spacing in the achievements header
+- Item tracker: added reward-source lookup + counts, hid empty reward counts, and aligned counts to active/future rewards
+- Item tracker: reworked two-column layout/spacing, removed extra outlines, and fixed expansion behavior
+- Item tracker: moved search to the top row with aligned filters and matched rounding
+- Hideout: added module groupings, selection detail panel, and icon display
+- Added hideout module icon set including the ventilation fan-only icon
+- Added hideout requirements data with per-level requirements and unlocks from the wiki
+- Hideout requirements now show current vs next upgrade with cleaner styling and "Not Built" labels
+- Hideout requirements now hide trader LL entries and use edition-based starting levels for stash/cultist circle
+- Hideout modules now show built/ready styling and hide locked modules until their prerequisites are met
+- Hideout unlock lists now filter to show actual unlocks while skipping requirement-only noise
+
+## 1/5/2026 - WC Tracker v1.2.3
+Changes:
+- Re-synced hideout requirements/functions/timings from the wiki for full accuracy
+- Filled missing hideout levels (Security, Vents, Weapon Rack)
+- Cleaned hideout unlock lists to focus on real unlocks instead of requirement noise
+- Added hideout upgrade button flow with saved module levels and ready/locked refresh
+- Spaced out hideout reward lists for easier scanning
+- Item tracker now includes all future hideout level requirements (next level as active, later levels as future)
+- Item tracker now ignores currency requirements (Roubles, Dollars, Euros)
+- Synced item images and refreshed item metadata from the item image fetch pass
+- Added missing hideout requirement items to the catalog and refreshed their images
+- Added PvP/PvE mode switching with separate progress, hideout, and achievements per mode
+- Onboarding now supports per-mode setup while keeping username and edition shared
+- Mode switch prompts are optional so users can keep a single profile until they opt in
+- Added a session startup mode prompt to choose PvP or PvE on app open
+- Replaced the default create-profile confirm with a custom modal that matches the app styling
+- Remembered the last chosen mode for reloads while still prompting on fresh app starts
+- Achievements now share completion across PvE/PvP by default with optional per-mode support when explicitly tagged
+- Added Workbench level 3 requirements and upgrade effects
+- Hideout upgrades now show "Max level reached" at the cap
+- Hideout item tracker now resolves module levels from stored hideout keys and skips locked modules
+- Removed Defective Wall from hideout data and related prerequisites
+- Fix: removed UTF-8 BOM markers from quest data to stop build JSON parse errors
+
+## 1/6/2026 - WC Tracker v1.2.4
+Changes:
+- Electron updater wiring for GitHub Releases with update modal, header/hero badges, progress, and cleaner error states
+- Update checks now animate the title, time out to a clean "latest release" state, and clear timers on errors
+- Manual update refresh now reloads first and then triggers the update check panel; modal sizing tightened
+- Windows build metadata updated for publisher fields, updater files bundled for ASAR, version bumped to 1.2.4, and package name set to world-class-tracker
+- Quest list now renders the tree even when filters hide all quests, with clearer empty-state guidance
+- Onboarding only asks for edition on first profile creation, BTR auto-complete stays opt-in, and under-15 auto-complete only marks prerequisites
+- Hid the quest tree edit button and disabled its toggle
+- Hideout downgrade controls added with edition guardrails, moved to the current level card, and confirmation removed
+- Hideout requirements/rewards now use collapsible sections with columns, inline FIR/counts, de-duplicated rewards, and clearer headers
+- Hideout upgrades now enforce prerequisite modules, cascade downgrades to dependents, and show missing-upgrade tooltips with module links
+- Hideout layout refinements: module grid above the detail panel, next upgrade cards styled like current, and the extra placeholder removed
+- Profile panel refined with viewport clamping, read-only Mode/Faction rows, centered header, and aligned refresh styling
+- Profile reset now uses a typed confirmation overlay with cancel/escape/backdrop close support
+- Mode switching now uses a full-screen "Switching Profiles..." fade and returns to Quest Tracker after switching
+- Moved the PvP/PvE toggle next to the menu button in the header
+- Item tracker search field and progress bar background now match the achievements styling
+- Progress bar fill now renders correctly over the updated background styling
+- Removed the "Updated on" label from the interface
+- Recommendation item scoring now matches item tracker entries by quest name or ID
+- Bumped version to 1.2.5
+- Set installer artifact name to WCTracker-Setup
+- Public repo docs refreshed and roadmap reorganized to Active/Backlog/Long Term
+- Prep build for 1.2.4 release
