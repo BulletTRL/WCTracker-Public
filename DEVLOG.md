@@ -97,6 +97,9 @@ Added:
 
 ## 12/23/2025 - WC Tracker v1.1.4
 Changes:
+- Synced kappa-only toggles across dashboard, quest tracker, and item tracker for consistent mode switching
+- Item tracker now defaults Future on at launch
+- Hideout modules highlight when maxed and show a “Hideout Max Upgraded” banner when fully completed
 - README remade with updated logic
 - Item tracker view state saved before first render
 - Removed Any dropdown and show active filters under Maps/Traders/Quest Type
@@ -289,5 +292,69 @@ Changes:
 - Recommendation item scoring now matches item tracker entries by quest name or ID
 - Bumped version to 1.2.5
 - Set installer artifact name to WCTracker-Setup
+- Updater release notes now strip HTML and the update notes scrollbar is hidden
+- Updater now links to the GitHub release instead of downloading/installing, and the hero update pill was removed
 - Public repo docs refreshed and roadmap reorganized to Active/Backlog/Long Term
 - Prep build for 1.2.4 release
+
+## 1/9/2026 - WC Tracker v1.2.5
+Changes:
+- Added the Dashboard view as the new landing hub with map-based recommended tasks
+- Added quest item and hideout item panels with search filtering and hidden-scroll lists
+- Added a raid items panel that pulls key items from the recommended tasks
+- Reworked the dashboard into a 2x2 panel layout so all four panels stay visible
+- Refreshed the map selector styling to a larger, cleaner pill
+- Added a dashboard mode selector (Completion/Kappa/Lightkeeper/Prestige) to filter quest panels
+- Tightened dashboard list density and spacing to fit more content at a glance
+
+## 1/12/2026 - 1/13/2026 - WC Tracker v1.2.5
+Changes:
+- Reduced dashboard side padding to give panels more width
+- Balanced dashboard panel heights with cleaner bottom spacing
+- Dashboard lists now scroll within panels while keeping the page fixed
+- Raid items now ignore placeholder key item entries
+- Dashboard panels now collapse vertically per column when empty, preserving headers and empty states
+- Filled key_items_required across quests for bring-into-raid requirements (keys, markers, jammers, cameras, gear, weapons)
+- Cleaned key_items_required to avoid hand-over/found items so only true raid bring-ins remain
+- Dashboard recommendations now show all tasks for the selected map with an Any Map option
+- Dashboard cards now auto-size when lists are shorter than the panel
+- Dashboard columns now shrink the smaller list by item count while the larger panel fills the remaining space
+- Raid items now render in a 2-column grid for cleaner scanning
+- Dashboard empty states now swap the card title instead of showing body text
+- Dashboard item tiles now open a centered detail popup with quest/module breakdowns
+- Recommended tasks now open a quest detail popup with a View in Tracker action
+- Quest detail popup now shows full quest info (maps, prerequisites, unlocks, objectives, items, rewards)
+- Quest detail popup styling tightened with no internal scroll and updated buttons
+- Recommended tasks include a quick checkmark to mark a quest complete
+- Added Kappa markers on dashboard recommended tasks and raid items tied to Kappa quests
+- Quest items now highlight and sort to the top when the linked quest is active
+- Hideout items now include all future upgrade requirements, with next-level items highlighted
+- Softened highlight styling and bumped dashboard item icon sizing
+- Quest detail popup now shows plain-text meta (map/type/level/trader) and hides prereq/unlock and item requirement lists
+- Quest detail popup close action now uses a larger top-right X
+- Standardized Farming - Part 2 objectives to combined "Find in raid and hand over" wording
+- Dashboard view buttons now use a muted style so the completion checkmark stands out
+- Filled key items required for weapon/gear-specific kill quests, including Setup and Decontamination Service
+- Dashboard map/mode selectors now use a styled dropdown panel with Any as the default
+- Recommendations now list selected map quests before Any Location entries
+- Raid item panel sizing respects 2-column rows and trims extra bottom gap
+- Removed the Prestige mode option from the dashboard selector
+- Raid items to bring now pull their own icon set from Tarkov.dev, with a dedicated image map for dashboard use
+- Removed non-item raid entries from Scrap Metal and Rigged Game key item lists
+- Dashboard recommended task meta now includes map info
+- Dashboard quest item counts now reflect the active mode filter
+- Removed Lightkeeper from the dashboard mode selector
+- Search-empty states now appear at the top of quest/hideout item panels
+- Fishing Gear now tracks SV-98 and Leatherman Multitool as raid bring-ins and quest items
+- Raid item sanitization now keeps non-key items for bring-into-raid tracking
+- Standardized generic gear requirements to "Any" wording across relevant quests
+- Silent Caliber now calls out a suppressed 12ga specifically
+- Added a pistol icon override for the "Any Pistol" raid item entry
+- Dashboard item detail popups now use trader portraits with chip-based metadata and View actions
+- Reward item lists now use plain text styling with tighter spacing
+- Kappa-only toggles now sync across dashboard, quest tracker, and item tracker
+- Item tracker filters now use Kappa Only instead of Active (Active is always on)
+- Dashboard map selection now resets to Any on app start
+- Quest rewards spacing tightened and panel alignment refined
+- Item tracker now defaults Future on at launch
+- Hideout modules now highlight when maxed and show a Hideout Max Upgraded banner

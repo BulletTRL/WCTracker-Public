@@ -1,4 +1,12 @@
 # Release Notes
+## v1.2.4 (1/6/2026)
+- Updater Release: in-app update notifier with release notes and a header update badge.
+- Auto-update download/install is paused until we can purchase a $500 code-signing certificate.
+- For now, clicking the update badge opens the GitHub Releases page; download the installer to upgrade as normal.
+- Hideout tracker upgrades/rewards layouts cleaned up with gating, downgrades, and clearer requirements.
+- Mode switching uses a full-screen transition and always returns to Quest Tracker.
+- Item tracker styling aligns with achievements and item badges match quest IDs or names.
+
 ## v1.2.3 (1/5/2026)
 - Re-synced hideout requirements, rewards, and timings for accuracy.
 - Added hideout upgrade flow with saved levels and max-level messaging.
@@ -192,3 +200,14 @@
 - In progress at the time: compiler for public beta, updater, recommendations, mid-wipe start integration, hideout tracking, item tracking, dashboard, achievement tracking.
 
 
+# v1.2.5 (1/13/2026)
+- New Dashboard landing page with map-based recommendations and four panels (tasks, quest items, hideout items, raid bring-ins).
+- Added dashboard mode selector (Completion/Kappa) and improved map selector with Any default.
+- Raid bring-in tracking now pulls key items (keys, markers, gear, weapons) with dedicated images and Kappa markers.
+- Dashboard panels support search, auto-sizing, and empty states that swap the card title.
+- Dashboard item and quest panels now open detail popups with quest/module breakdowns and quick actions.
+- Quest detail view cleaned up with plain meta text, tighter rewards formatting, and a larger close button.
+- Item tracker now defaults Future on, uses Kappa Only instead of Active, and matches achievements styling.
+- Hideout tracking now supports downgrade controls, prerequisite gating, cascade downgrades, and max-level highlights.
+- Kappa-only mode now stays in sync across dashboard, quest tracker, and item tracker.
+- Updated quest item/raid requirements and wording for multiple quests (Setup, Decontamination Service, Fishing Gear, Farming - Part 2, Silent Caliber).
