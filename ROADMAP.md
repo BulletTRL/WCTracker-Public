@@ -16,6 +16,7 @@ This is a lightweight roadmap based on current plans and beta feedback. Prioriti
 - Hideout requirements/rewards sections with collapsible lists, columns, and tooltips
 - Show crafts unlocked by hideout upgrades without flooding the screen
 - Dashboard start page (map-based recommendations + item needs panels)
+- Quest detail image galleries with zoom/pan viewer
 
 ## Active (Soon)
 - Finish Discord setup and support flow

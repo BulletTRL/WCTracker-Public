@@ -307,7 +307,7 @@ Changes:
 - Added a dashboard mode selector (Completion/Kappa/Lightkeeper/Prestige) to filter quest panels
 - Tightened dashboard list density and spacing to fit more content at a glance
 
-## 1/12/2026 - 1/13/2026 - WC Tracker v1.2.5
+## 1/10/2026 - 1/13/2026 - WC Tracker v1.2.5
 Changes:
 - Reduced dashboard side padding to give panels more width
 - Balanced dashboard panel heights with cleaner bottom spacing
@@ -358,3 +358,31 @@ Changes:
 - Quest rewards spacing tightened and panel alignment refined
 - Item tracker now defaults Future on at launch
 - Hideout modules now highlight when maxed and show a Hideout Max Upgraded banner
+
+## 1/14/2026-1/15/2026 - WC Tracker v1.2.6
+Changes:
+- Added quest images across traders (BTR Driver, Fence, Jaeger, Lightkeeper, Mechanic, Peacekeeper, Prapor, Ragman, Ref, Skier, Therapist)
+- Updated Tigr Safari to require three MS2000 markers
+- Quest list no longer shows thumbnails; images now appear only in quest detail views
+- Dashboard quest + hideout item searches now stay in sync
+- Removed duplicate Revision - Part 1/2 quest files and image sets in favor of the canonical Revision quests
+- Quest detail panels now show quest images as a right-side gallery in the tracker and dashboard
+- Quest detail images now use a stacked card preview with a click-to-view carousel
+- Chumming now tracks Golden neck chains for item tracker (x9) and raid items (x3 per map)
+- Item tracker now includes hideout requirements from locked modules (e.g., Military power filters)
+- Hideout item detail popups now show the module icon (Workbench, Generator, etc.)
+- Quest image viewer styling refined with a larger image panel and cleaner modal layout
+- Quest image viewer now uses a view-only zoom + pan experience constrained to the frame
+- Dashboard detail popups now expand to fit content (no visible scroll)
+- Normalized objective text to avoid duplicate "Find" + "Hand over" lines
+- Marker, camera, and signal jammer counts now match the number of objective placements
+- Quest detail view now hides key items (kept for backend logic)
+- Quest image viewer no longer shows scrollbars
+- Downscaled oversized quest map JPGs (1920px max) to cut app size by ~22MB
+- Removed the stray Reserve map entry and cleaned its related assets
+- Added a Shoreline resort map image to Chemistry Closet
+- Image cleanup to remove non-quest visuals and trim quest image sets
+- Quest tracker cards no longer show the left green accent bar
+- Quest/detail modal styling updated for a cleaner panel look
+- Chemistry Closet objective now calls out East wing room 110
+- Build info modified for v1.2.6 pre-release.

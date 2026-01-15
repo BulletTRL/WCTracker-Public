@@ -1,4 +1,20 @@
 # Release Notes
+## v1.2.6 (1/15/2026)
+- Quest detail views now include image galleries for all traders, with a view-only zoom/pan viewer.
+- Quest list thumbnails are removed; images now appear only inside quest detail popups and dashboard panels.
+- Quest data cleanup: marker/camera counts corrected, duplicate "Find/Hand over" objectives normalized, and key objectives clarified.
+- Removed duplicate Revision entries and the stray Reserve map entry; Chemistry Closet now includes the Shoreline resort map.
+- Item tracker updates for Chumming golden neck chains and locked hideout requirements, plus hideout module icons in detail popups.
+- Downscaled oversized quest map JPGs and trimmed non-quest images to reduce app size.
+
+## v1.2.5 (1/13/2026)
+- New Dashboard landing page with map-based recommendations and four item panels.
+- Dashboard mode selector (Completion/Kappa) with synced Kappa-only toggles across views.
+- Raid bring-in tracking now surfaces required gear/keys with dedicated icons and Kappa markers.
+- Quest detail view formatting refined with cleaner rewards text and better metadata layout.
+- Item tracker defaults Future on and aligns styling with the achievements view.
+- Hideout upgrades now highlight maxed modules and surface a max-upgraded banner.
+
 ## v1.2.4 (1/6/2026)
 - Updater Release: in-app update notifier with release notes and a header update badge.
 - Auto-update download/install is paused until we can purchase a $500 code-signing certificate.

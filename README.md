@@ -4,6 +4,7 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 
 ## Highlights
 - Quest tracker with filters, quest details, and quick actions.
+- Quest detail views with image galleries and zoom/pan viewer.
 - Quest tree view with trader lanes, prerequisites, and zoom/pan.
 - Dashboard landing page with map-based recommendations and item panels.
 - Item tracker for quest-required items with FIR tags, reward sources, and hideout requirements.
