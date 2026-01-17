@@ -1,4 +1,11 @@
 # Release Notes
+## v1.2.7 (1/16/2026)
+- Partial completion for quest objectives (kills, marks, extracts) with inline +/- controls.
+- Item hand-in progress is now per-quest and synced across dashboard, quest tracker, and item tracker.
+- Item progress reconciliation for name variants keeps counts consistent across views.
+- Recommended tasks now boost quests with partial progress.
+- Profile panel save moved into the header; closing the panel acts as cancel.
+
 ## v1.2.6 (1/15/2026)
 - Quest detail views now include image galleries for all traders, with a view-only zoom/pan viewer.
 - Quest list thumbnails are removed; images now appear only inside quest detail popups and dashboard panels.

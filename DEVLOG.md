@@ -386,3 +386,16 @@ Changes:
 - Quest/detail modal styling updated for a cleaner panel look
 - Chemistry Closet objective now calls out East wing room 110
 - Build info modified for v1.2.6 pre-release.
+
+## 1/16/2026 - WC Tracker v1.2.7
+Changes:
+- Quest item partials now edit per-quest rows in item popups (counts + controls inline with each quest)
+- Quest objectives show inline found counts with +/- controls instead of a separate hand-in section
+- Item tracker quest rows show found/required counts with inline +/- controls (no duplicate count chip)
+- Non-item objectives now support partial progress (kills, marks, extracts, etc.)
+- Item progress now reconciles item name variants so counts stay synced across views
+- Item tracker totals now refresh immediately after partial adjustments
+- Objective progress now syncs between dashboard quest popups and the quest tracker
+- Completed objective styling now strikes only the objective text (counts stay clean)
+- Recommended task scoring now boosts quests with partial objective progress
+- Profile panel save moved to the header; cancel removed in favor of clicking out
