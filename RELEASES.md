@@ -1,10 +1,11 @@
 # Release Notes
-## v1.2.7 (1/16/2026)
-- Partial completion for quest objectives (kills, marks, extracts) with inline +/- controls.
-- Item hand-in progress is now per-quest and synced across dashboard, quest tracker, and item tracker.
-- Item progress reconciliation for name variants keeps counts consistent across views.
-- Recommended tasks now boost quests with partial progress.
-- Profile panel save moved into the header; closing the panel acts as cancel.
+## v1.2.8 (1/18/2026)
+- Azure Trusted Signing pipeline is in place for signed builds.
+- In-app updates now download and install from GitHub Releases (requires installer, latest.yml, and blockmap assets).
+- Quest tree focus mode and Kappa markers, plus improved pan/zoom baselines.
+- Onboarding no longer repeats the mode prompt and task choice picks show trader portraits + tooltips.
+- Dashboard item detail popups clamp to the viewport; hideout item counts now adjust per module.
+- Quest choice paths can be reset to allow backtracking, and action buttons now register reliably.
 
 ## v1.2.6 (1/15/2026)
 - Quest detail views now include image galleries for all traders, with a view-only zoom/pan viewer.

@@ -399,3 +399,27 @@ Changes:
 - Completed objective styling now strikes only the objective text (counts stay clean)
 - Recommended task scoring now boosts quests with partial objective progress
 - Profile panel save moved to the header; cancel removed in favor of clicking out
+- Build info modified for v1.2.7 pre-release.
+
+## 1/17/2026 - 1/18/2026 - WC Tracker v1.2.8
+Changes:
+- Signing and build now use Azure Trusted Signing (service principal + managed certificate profiles), with tool/setup docs, local env templating, runtime injection, a space-free executable name, and the v1.2.8 bump.
+- Quest data now includes the missing Jaeger Reserve task so it appears in the tracker and onboarding, and Information Source no longer requires armor.
+- Onboarding flow no longer repeats the first-launch mode prompt, and the task choice modal now shows trader portraits with hover descriptions.
+- Dashboard item detail popups are clamped to the viewport with hidden scrollbars, and hideout item counts are adjustable per module.
+- Quest tree now supports Kappa-only filtering with a green diamond indicator, plus a focus mode that can hide unrelated quests/edges while showing full prereq + future chains across traders.
+- Quest tree focus mode suppresses Collector unless it is selected, and cross-trader link overlays exclude Collector.
+- Quest tree single click highlights same-trader prereq chains; double click enters the cross-trader focus view.
+- Quest tree pan/zoom behavior is based on real node extents and trader lanes, with tighter left padding, extended bottom range for BTR/Lightkeeper rows, and a width-locked baseline zoom.
+- Quest tree now opens top-left from the main panel, resets to the 0% baseline, and keeps the 0% label stable.
+- Roadmap refreshed with the next-up items (All Items view, in-raid overlay work, and PvP prestige flow) and removed the generic recommendation tuning entry.
+- Quest choice paths can now be reset, clearing failed alternatives and dependent progress so users can backtrack.
+- Update prompts now download and install updates in-app instead of linking to the release page.
+- Roadmap now includes debounced save work (Active), auto-rotating backups with restore/export selection, quest tree render performance fixes, and safeguards for irreversible actions.
+- Documentation now aligns with the in-app updater flow and required release assets for updates.
+- Public and internal docs refreshed with the latest 1.2.8 highlights and update flow.
+- Roadmap now includes a quest tree grid/camera correctness pass to keep alignment polished.
+- Contributor guidelines removed to keep docs aligned with a solo-maintained project.
+- Resources menu now includes a Discord invite link.
+- Action buttons now register reliably on the first press.
+- Added a full-screen loading cover on launch and made profile switch/mode selection overlays fully opaque.

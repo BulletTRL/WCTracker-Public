@@ -5,15 +5,15 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 ## Highlights
 - Quest tracker with filters, quest details, and quick actions.
 - Quest detail views with image galleries and zoom/pan viewer.
-- Quest tree view with trader lanes, prerequisites, and zoom/pan.
+- Quest tree view with trader lanes, prerequisites, Kappa markers, focus mode, and zoom/pan.
 - Dashboard landing page with map-based recommendations and item panels.
 - Item tracker for quest-required items with FIR tags, reward sources, and hideout requirements.
-- Partial completion tracking for items and objectives across quest tracker, dashboard, and item tracker.
+- Partial item completion tracking across quest tracker, dashboard, and item tracker.
 - Achievements tracker with search and local completion state.
 - Hideout tracker with per-level requirements, unlocks, and upgrades.
 - Next Tasks recommendations that factor in item needs and progression paths.
 - PvP/PvE modes with separate progress (shared username/edition).
-- Update checker tied to GitHub Releases (download/install from the release page; auto-install requires code signing).
+- Update checker tied to GitHub Releases with in-app download/install for signed builds.
 
 ## Download and Install
 - Download the latest Windows installer from Releases:
@@ -22,7 +22,8 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 
 ## Updates
 - The app checks for updates on launch.
-- Use the Update badge in the header to open the updater panel and jump to the latest release download.
+- Use the Update badge in the header to open the updater panel and download/install in-app.
+- Releases must include the installer, latest.yml, and blockmap assets for updates to succeed.
 
 ## Getting Started
 1) Launch the app and pick PvP or PvE.
@@ -40,7 +41,7 @@ All progress is stored locally in JSON files. No accounts or servers are require
 - Disclaimer: public_repo/DISCLAIMER.md
 
 ## Contact
-Discord: XotiicWC
+Discord: https://discord.gg/rEb8J4y6SF
 
 ## Credits
 - Escape from Tarkov Wiki (quest data references and documentation)

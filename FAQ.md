@@ -13,7 +13,7 @@ Yes. Kappa-required quests are tracked and used by the recommendations and gatin
 Yes. PvE and PvP have separate progress data so you can track both.
 
 ## How do updates work?
-Updates are delivered via GitHub Releases. The installer, latest.yml, and the blockmap must be attached to the latest release for in-app updates to work.
+Updates are delivered via GitHub Releases and downloaded/installed in-app for signed builds. The installer, latest.yml, and blockmap must be attached to the latest release for updates to work.
 
 ## Is this affiliated with Battlestate Games?
 No. WC Tracker is a community project and is not affiliated with Battlestate Games.
