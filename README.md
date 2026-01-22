@@ -7,8 +7,9 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 - Quest detail views with image galleries and zoom/pan viewer.
 - Quest tree view with trader lanes, prerequisites, Kappa markers, focus mode, and zoom/pan.
 - Dashboard landing page with map-based recommendations and item panels.
+- Dashboard map selector highlights a recommended map based on active tasks.
 - Item tracker for quest-required items with FIR tags, reward sources, and hideout requirements.
-- Partial item completion tracking across quest tracker, dashboard, and item tracker.
+- Partial completion tracking for items and objectives across quest tracker, dashboard, and item tracker.
 - Achievements tracker with search and local completion state.
 - Hideout tracker with per-level requirements, unlocks, and upgrades.
 - Next Tasks recommendations that factor in item needs and progression paths.
@@ -39,6 +40,7 @@ All progress is stored locally in JSON files. No accounts or servers are require
 - FAQ: public_repo/FAQ.md
 - Screenshots: public_repo/SCREENSHOTS.md
 - Disclaimer: public_repo/DISCLAIMER.md
+- Overlay compliance notes: public_repo/OVERLAY_COMPLIANCE_NOTES.md
 
 ## Contact
 Discord: https://discord.gg/rEb8J4y6SF

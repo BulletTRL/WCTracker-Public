@@ -19,4 +19,4 @@ Updates are delivered via GitHub Releases and downloaded/installed in-app for si
 No. WC Tracker is a community project and is not affiliated with Battlestate Games.
 
 ## How do I report issues?
-Open an issue or post feedback with clear steps and screenshots where possible.
+Post feedback in Discord or open an issue with clear steps and screenshots where possible.

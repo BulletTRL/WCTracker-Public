@@ -2,6 +2,12 @@
 
 This is a lightweight roadmap based on current plans and beta feedback. Priorities can shift.
 
+## Recently Completed
+- Overlay base window with watermark for visibility
+- App header indicator for Tarkov running status
+- OCR-based PvP/PvE mode detection from the hideout version text
+- Guided onboarding quest sync with overlay OCR capture
+
 ## Active (Soon)
 - All Items view (search item, see requirements, rewards, barters, hideout use, and description)
 - Overlay for displaying item requirements

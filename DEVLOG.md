@@ -423,3 +423,55 @@ Changes:
 - Resources menu now includes a Discord invite link.
 - Action buttons now register reliably on the first press.
 - Added a full-screen loading cover on launch and made profile switch/mode selection overlays fully opaque.
+
+## 1/19/2026 - 1/20/2026 - WC Tracker v1.2.9
+Changes:
+Discord bot prep:
+- Quest directory metadata now skips rewrites when unchanged to avoid build churn.
+- Added a Discord bot workspace and drafted the role-gated auth implementation plan.
+
+Website:
+- Added a one-page landing site with a centered WC Tracker wordmark, beta corner brace, scroll hint, and Discord CTA.
+- Reworked the hero typography and palette to match the in-app styling while keeping the layout minimal.
+- Added scheduled version sync so the beta label auto-updates from the latest public release.
+- Kept additional website assets in repo for future iteration while excluding them from builds.
+
+App + data:
+- Build packaging now excludes internal docs and local tooling from the app bundle.
+- Release notes and public docs refreshed for the v1.2.9 build.
+- Quest detail completion now closes the dashboard modal, and ready-to-complete quests pulse in the tracker and dashboard.
+- Onboarding now includes a back action so profiles can be corrected mid-setup.
+- Quest tree single-click highlighting now stays within the same trader so cross-trader links only appear in focus mode.
+- Touch input now maps to primary button clicks for header and dashboard controls.
+- Objective count parsing now ignores model numbers so marker tasks don't inflate required counts.
+- Objective count parsing now ignores distance and location numbers so task targets stay accurate.
+- Objective count parsing now handles win/out-of phrasing and ignores part/level markers in objectives.
+- Item tracker now uses a single auto-allocate add/remove control per item and removes duplicate requirement listings in item details.
+- Added an item short-name alias dataset (with collision tracking) to prep OCR matching against in-game UI labels.
+- Added a click fallback delay to prevent stepper controls from double-advancing on press.
+- Suppressed delayed touch clicks when the native tap event already fired to stop double increments.
+- Updated the large beef stew item label to use the plural form.
+- Chumming now tracks the full 9 Golden neck chains in the item tracker.
+- Health Care Privacy - Part 5 now tracks the Gunpowder "Kite" hand-ins in the item tracker.
+- Mode selection and profile creation prompts now always use a full black backdrop and appear every app launch.
+- Onboarding back button styling refreshed and centered.
+- Added a back exit on the first onboarding step so profile setup can return to mode selection.
+- Onboarding action layout now centers the footer controls with matched button sizing.
+- Pharmacist now lists the Dorm room 114 key as a required raid item.
+- Dorm room 114 key now uses the same raid item image as Tarcone Director's office key.
+- Dashboard now opens by default on refresh and when switching profiles.
+- Onboarding buttons now share consistent sizing and styling across the flow steps.
+- Onboarding buttons now share a unified color treatment across all steps.
+- Back button sizing reduced to stay lighter in the onboarding footer.
+- Mode selection buttons now show the profile level (or N/A) under PvP/PvE.
+- Mode selection buttons now use hover-only emphasis with updated styling.
+- Raid items now stay in a simple two-column list and sort by quest order to keep related items adjacent.
+- Option-based quests no longer re-surface their alternate choice once a failed branch is set.
+- Raid items now use quest-based outline colors to keep same-quest items visually grouped.
+- Raid item quest colors now include a subtle glow for better visibility.
+- Quest item progress adjustments no longer flash the quest detail popup.
+- Dashboard map selection now includes a recommended entry based on active task density for the current mode.
+- General Wares objective copy now merges the find/hand-in wording into a single line.
+- Car Repair objectives now use combined find/hand-in wording per item.
+- Merged find + hand-in objectives for item quests where both lines already referenced the same item.
+- Dashboard quest-item detail view now respects quest state so "View" jumps to future/completed quests correctly.
