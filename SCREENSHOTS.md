@@ -9,3 +9,4 @@ Suggested shots:
 - Achievements view
 - Profile and onboarding screens
 - Recommendations panel (Next Tasks)
+- Mode creation popup (PvP/PvE)

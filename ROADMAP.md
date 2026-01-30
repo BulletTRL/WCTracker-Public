@@ -7,6 +7,8 @@ This is a lightweight roadmap based on current plans and beta feedback. Prioriti
 - App header indicator for Tarkov running status
 - OCR-based PvP/PvE mode detection from the hideout version text
 - Guided onboarding quest sync with overlay OCR capture
+- Dashboard render performance pass with synced item counts
+- Mode selection auto-pick for single-profile users + lightweight profile creation prompt
 
 ## Active (Soon)
 - All Items view (search item, see requirements, rewards, barters, hideout use, and description)
@@ -18,6 +20,7 @@ This is a lightweight roadmap based on current plans and beta feedback. Prioriti
 ## Backlog
 - Server sided login for non-beta prevention
 - Website for beta access + whitelist application
+- Installer UI/branding polish (NSIS styling, visuals, and copy)
 - Auto-rotating data backups (5-slot history with version/date metadata) plus restore/export selection UI
 - Safeguards for irreversible actions (confirmation/undo + restore path for resets and quest path changes)
 - Quest tree grid + camera correctness pass (snap/offset/clamp cleanup to keep alignment polished)

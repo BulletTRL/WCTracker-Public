@@ -7,7 +7,7 @@ Use this template to turn the dev log entries since the last release into a clea
 ## WC Tracker vX.Y.Z (MM/DD/YYYY)
 
 **Highlights**
-- [Top 2–4 user-facing wins.]
+- [Top 2-4 user-facing wins.]
 
 **Improvements**
 - [UI/UX refinements, performance, quality-of-life.]
@@ -17,6 +17,7 @@ Use this template to turn the dev log entries since the last release into a clea
 
 **Notes**
 - [Build/installer changes, known limitations, or important behavior changes.]
+- [Include hidden diagnostics/support unlocks if changed.]
 
 ---
 
@@ -28,5 +29,6 @@ Requirements:
 - Group into Highlights, Improvements, Fixes, and Notes.
 - Combine similar items; avoid long bullet lists.
 - If a change impacts onboarding, quest logic, item tracker, achievements, hideout, or updater, mention it once in the most relevant section.
-- Use 3–8 bullets per section max.
+- Use 3-8 bullets per section max.
+
 

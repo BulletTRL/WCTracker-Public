@@ -7,3 +7,5 @@ WC Tracker is a community-built companion tool for Escape from Tarkov players.
 - All game data references are used for informational purposes.
 
 If you are a rights holder and have concerns, contact WorldClassStudios for review.
+
+Last updated: 1/30/2026 (v1.3.0 documentation refresh)

@@ -97,6 +97,10 @@ This document captures our intent, constraints, and decisions to keep any displa
 - BattlEye policy or guidance on external overlays.
 - Any public developer posts or approvals for similar tools (citations + dates).
 
+## Operational Notes (v1.3.0)
+- Overlay diagnostics are available in-app for support (hidden unlock).
+- OCR warnings are filtered from diagnostics to reduce noise.
+
 ## RatScanner Review (Pending Sources)
 ## RatScanner Review (Source-Based Summary)
 This summary is based only on their public documentation and is not an endorsement or a compliance guarantee.
@@ -113,3 +117,6 @@ This summary is based only on their public documentation and is not an endorseme
 ### Sources
 - RatScanner README: https://raw.githubusercontent.com/RatScanner/RatScanner/master/README.md
 - RatScanner FAQ: https://raw.githubusercontent.com/RatScanner/RatScanner/master/FAQ.md
+
+
+

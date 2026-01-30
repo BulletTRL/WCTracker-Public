@@ -1,4 +1,13 @@
 # Release Notes
+## v1.3.0 (1/30/2026) Performance & Profile Flow
+- Reduced dashboard lag by caching recommendations, visible-quest sets, and quest item needs.
+- Quest item detail popups now keep tile counts synced after +/- adjustments.
+- Mode selection auto-picks the only profile when just one exists.
+- Profile creation prompt is now a lightweight panel (no full-screen block or loading).
+- Quest tracker view now renders immediately when switching from the menu.
+- Inactive overlay creation over game (ctrl + shift + o to open).
+- Onboarding guided auto sync.
+
 ## v1.2.9 (1/22/2026) Navigation
 - Dashboard map selector now includes a Recommended entry based on active task density for the selected mode.
 - Objective counts are more reliable (distance/location numbers are ignored; win/out-of phrasing is handled correctly).
