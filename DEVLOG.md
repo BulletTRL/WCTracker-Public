@@ -1,5 +1,11 @@
 # Dev Log (Discord)
 
+## 2/1/2026 - WC Tracker v1.3.1
+Changes:
+- Raid bring-in items now respect map selection and objective progress (remaining counts).
+- Overlay toggle now persists across game restarts; turning it off resets OCR state.
+- Quest key requirements updated for room-locked objectives and bring-in keys.
+
 ## 1/30/2026 - WC Tracker v1.3.0
 Changes:
 - Faster dashboard renders by caching recommendations, visible-quest sets, and quest item needs.

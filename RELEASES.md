@@ -1,4 +1,9 @@
 # Release Notes
+## v1.3.1 (2/1/2026) Raid Items + Overlay Stability
+- Raid bring-in items now respect the selected map and remaining objective progress.
+- Overlay toggle now persists across game restarts; turning it off resets OCR state.
+- Updated quest key requirements for room-locked objectives and bring-in keys.
+
 ## v1.3.0 (1/30/2026) Performance & Profile Flow
 - Reduced dashboard lag by caching recommendations, visible-quest sets, and quest item needs.
 - Quest item detail popups now keep tile counts synced after +/- adjustments.

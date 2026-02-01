@@ -1,6 +1,7 @@
-﻿# Screenshots
+# Screenshots
 
 Place screenshots in public_repo/assets/ and reference them here.
+Last updated for v1.3.1 (no new screenshots yet).
 
 Suggested shots:
 - Quest tracker with filters

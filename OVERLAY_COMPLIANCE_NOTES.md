@@ -101,6 +101,9 @@ This document captures our intent, constraints, and decisions to keep any displa
 - Overlay diagnostics are available in-app for support (hidden unlock).
 - OCR warnings are filtered from diagnostics to reduce noise.
 
+## Operational Notes (v1.3.1)
+- Overlay toggle persists across game restarts; switching it off resets OCR state.
+
 ## RatScanner Review (Pending Sources)
 ## RatScanner Review (Source-Based Summary)
 This summary is based only on their public documentation and is not an endorsement or a compliance guarantee.

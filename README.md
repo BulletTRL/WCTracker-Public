@@ -9,6 +9,7 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 - Dashboard landing page with map-based recommendations and item panels.
 - Dashboard map selector highlights a recommended map based on active tasks.
 - Dashboard and item progress updates stay in sync across tiles and detail popups.
+- Raid bring-in items now respect map selection and objective progress (remaining counts).
 - Item tracker for quest-required items with FIR tags, reward sources, and hideout requirements.
 - Partial completion tracking for items and objectives across quest tracker, dashboard, and item tracker.
 - Achievements tracker with search and local completion state.
@@ -16,6 +17,7 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 - Next Tasks recommendations that factor in item needs and progression paths.
 - PvP/PvE modes with separate progress (shared username/edition).
 - Mode selection auto-picks PvP/PvE when only one profile exists; profile creation uses a lightweight popup.
+- Overlay toggle persists across game restarts; turning it off resets OCR state.
 - Update checker tied to GitHub Releases with in-app download/install for signed builds.
 
 ## Download and Install

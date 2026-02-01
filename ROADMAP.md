@@ -9,6 +9,8 @@ This is a lightweight roadmap based on current plans and beta feedback. Prioriti
 - Guided onboarding quest sync with overlay OCR capture
 - Dashboard render performance pass with synced item counts
 - Mode selection auto-pick for single-profile users + lightweight profile creation prompt
+- Raid bring-in items now respect map selection and objective progress (remaining counts)
+- Overlay toggle persists across game restarts and can reset OCR when switched off
 
 ## Active (Soon)
 - All Items view (search item, see requirements, rewards, barters, hideout use, and description)
