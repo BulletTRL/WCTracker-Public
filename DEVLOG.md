@@ -1,11 +1,17 @@
 # Dev Log (Discord)
 
-## 2/1/2026 - WC Tracker v1.3.1
+## 2/8/2026 - WC Tracker v1.3.2
 Changes:
-- Raid bring-in items now respect map selection and objective progress (remaining counts).
-- Overlay toggle now persists across game restarts; turning it off resets OCR state.
+- Raid bring-in items respect map selection and objective progress (remaining counts).
+- Raid bring-in counts for kill-with gear objectives now show 1 (bring-in).
 - Quest key requirements updated for room-locked objectives and bring-in keys.
-
+- Overlay close control supports click-out and Esc; hint is shown inside the overlay panel.
+- Overlay toggle is session-only (full app restart resets it).
+- Suppressed the "New quests unlocked" popup in overlay mode.
+- Pinned Images control aligned with the dashboard header row.
+- Recommended map scoring now weighs remaining progress and per-map objectives.
+- Item progress remaining counts now refresh correctly after partial updates.
+- Guided auto sync in onboarding is temporarily disabled (manual setup only).
 ## 1/30/2026 - WC Tracker v1.3.0
 Changes:
 - Faster dashboard renders by caching recommendations, visible-quest sets, and quest item needs.
@@ -114,7 +120,7 @@ Added:
 Changes:
 - Synced kappa-only toggles across dashboard, quest tracker, and item tracker for consistent mode switching
 - Item tracker now defaults Future on at launch
-- Hideout modules highlight when maxed and show a ìHideout Max Upgradedî banner when fully completed
+- Hideout modules highlight when maxed and show a ÔøΩHideout Max UpgradedÔøΩ banner when fully completed
 - README remade with updated logic
 - Item tracker view state saved before first render
 - Removed Any dropdown and show active filters under Maps/Traders/Quest Type
@@ -549,11 +555,11 @@ App + data:
 - Quest sync capture width increased to better read longer quest names.
 - Quest sync overlay hint now instructs a slow sweep past quest names and is bolded for visibility.
 - Quest sync OCR now strips bracketed zone tags like [PvP Zone]/[PvE Zone] before matching quest names.
-- Quest sync overlay now shows a temporary ìReading Öî status line to reveal what OCR sees before confirmation.
+- Quest sync overlay now shows a temporary ÔøΩReading ÔøΩÔøΩ status line to reveal what OCR sees before confirmation.
 - Quest sync capture height increased to pick up the extra zone tag line.
 - Overlay mode now hides the loading spinner backdrop for faster open.
 - Overlay now restores its last image viewer state per session without affecting the main app.
-- Overlay dashboard now mirrors the appís active PvP/PvE mode and updates when the app mode changes.
+- Overlay dashboard now mirrors the appÔøΩs active PvP/PvE mode and updates when the app mode changes.
 - Fixed early init errors in overlay mode caused by debug and mode helpers loading too late.
 - Quest sync status now holds the last OCR line until a new scan, so the readout stays visible.
 - Quest sync now accepts stable repeats by quest name even if the OCR line shifts position.
@@ -563,13 +569,74 @@ App + data:
 - Overlay dashboard edits now sync back to the main app instantly.
 - Overlay dashboard now opens centered with fixed max dimensions and no startup loading splash.
 - Overlay detection now treats Tarkov Arena as a supported process for testing.
-- Overlay no longer prompts for PvP/PvE selection and instead relies on the appís active mode.
+- Overlay no longer prompts for PvP/PvE selection and instead relies on the appÔøΩs active mode.
 - Mode-switch loading overlay is now suppressed in overlay mode so it opens instantly.
 - Overlay now skips building non-dashboard views to prevent the quest list flash on hotkey open.
-- Item and objective progress updates now debounce disk writes and UI renders to reduce +/ñ lag.
+- Item and objective progress updates now debounce disk writes and UI renders to reduce +/ÔøΩ lag.
 - Overlay mode now applies its layout class before the page paints to avoid the brief quest-list flash.
 - Quest list rendering now runs only while the quest tracker view is active to reduce click lag.
 - Added temporary performance timing logs in the diagnostics console to identify slow render paths.
 - Item progress buttons now avoid duplicate dashboard/item tracker renders, and item tracker rendering only runs when that view is active.
 - Disabled DevTools shortcuts and removed the hidden diagnostics console access in production builds.
 
+- Discord devlog webhook now derives the next dev version from the latest public release tag automatically.
+- Discord devlog now ignores non-semver tags (like beta labels) when computing the next version.
+- Discord devlog now reads GitHub ‚Äúlatest release‚Äù to pick the correct version source before bumping.
+- Discord devlog now authenticates GitHub API requests and falls back to semver tags if the API is unavailable.
+- Discord devlog now reads the version directly from the public dev log in this repo.
+- Fixed devlog version parsing to read vX.Y.Z from the public dev log for Discord posts.
+- Overlay now targets the active Tarkov display only and can be re-opened after Esc close during a run.
+- Overlay hotkey now re-checks Tarkov state on open so Esc close can reopen reliably.
+- Overlay hotkey can reopen even after the base overlay window was closed.
+- Quest tree zoom now anchors to the cursor without shifting pan limits.
+- Quest tree focus mode now only exits when re-clicking the focused quest (no more clearing on pan/move).
+- Quest tree single/double click now switches focus directly between quests; only empty space keeps the current focus.
+- Mode creation now jumps straight into onboarding without re-asking PvP/PvE.
+- New mode profiles now always enter onboarding immediately instead of returning to the mode selector.
+- New mode profile creation now jumps into onboarding immediately without a second click.
+- Onboarding OCR capture now reads to the left of the cursor, matching the guide instructions.
+- Dashboard now supports pinning quest images and viewing them together in a pinned gallery.
+- Pinned images control now matches dashboard styling and aligns to the right header actions.
+- Pinned images control now aligns to the right column edge in the dashboard header.
+- Pinned images notice now floats under the button so the button aligns cleanly to the right edge.
+- Empty pinned state now shows a visible callout above the button on both app and overlay dashboards.
+- Pinned empty-state callout now forces visibility to avoid getting lost in the layout.
+- Pinned empty-state callout now appears to the left of the button with a side connector.
+- Quest image viewer now centers the quest title in the header.
+- Quest detail image pin button now anchors visibly to the top-right of the image.
+- Quest image viewer now fills the star icon when pinned and highlights the button in green.
+- Quest image viewer pin button now toggles pinning and updates the pinned gallery.
+- Pinned gallery now includes an unpin button and keeps saved pins between sessions.
+- Pinned star highlight now uses a tighter glow and brighter green fill.
+- Ctrl+R refresh now keeps the current view state until the app is fully closed.
+- Ctrl+R refresh now keeps the PvP/PvE session selection instead of re-prompting.
+- Ctrl+R refresh now preserves open pinned/quest image/quest detail panels.
+- Pinned images panel now uses a larger modal with tighter margins.
+- Pinned gallery tiles now fill edge-to-edge with top-right unpin control and bottom-left labels.
+- Pinned gallery overlays now anchor to each image frame so labels/buttons sit on the image.
+- Pinned gallery overlays now lock to the actual rendered image bounds for consistent placement.
+- Pinned gallery header now overlays the grid so images fill the full panel.
+- Pinned star highlight now uses the main green and a tighter outline glow.
+- Pinned star now fills without disappearing and uses a thinner outline glow.
+- Fixed pinned star icon resetting when toggling.
+- Pinned star now matches the highlight green for consistent color.
+- Pinned star no longer changes the button background color when active.
+- Pinned icon now updates per image as you navigate the viewer.
+- Pinned gallery now uses a tight masonry layout with full images and small gaps.
+- Pinned images now persist across Ctrl+R refreshes.
+- Removed the yellow focus highlight from the pin button.
+- Pinned gallery now reflows after images load so sizing stays tight and consistent.
+- Pinned gallery now balances row heights to keep image sizes more even.
+- Pinned gallery now uses a freeform packing layout to maximize image size without columns.
+- Pinned gallery packing now prefers best-fit placement for cleaner tetris-like layouts.
+- Pinned gallery now scales packed layouts to fully fill the available space.
+- Pinned gallery now falls back to portrait-aware layouting to avoid large gaps.
+- Overlay dashboard now removes the close X and shows an inline Esc/click-outside close hint.
+- Overlay toggle now shows a hotkey tip in the header when enabled.
+- Pinned gallery now opens faster when ratios are cached to reduce startup lag.
+- Pinned images panel is now ~15% larger to maximize visible space.
+- Onboarding quest sync preview now stays solid and locked to the left of the cursor.
+- Overlay hotkey hint now appears as a timed dropdown with a progress bar.
+- Pinned images close button now aligns to equal top/right margins with a circular frame.
+- Quest sync preview now stays solid during capture and remains anchored to the left of the cursor.
+- Quest sync OCR worker now auto-retries after worker crashes to prevent postMessage errors.

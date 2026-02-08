@@ -1,7 +1,18 @@
 # Release Notes
+## v1.3.2 (2/8/2026) Overlay Tweaks + Recommendations
+- Guided auto sync in onboarding is temporarily disabled (manual setup only).
+- Overlay close hint moved into the overlay panel (top-right, visible area).
+- Suppressed the "New quests unlocked" modal in overlay mode (still shown in app).
+- Pinned Images control aligned with the dashboard header row.
+- Recommended map scoring now weighs remaining progress and per-map objectives.
+- Item progress remaining counts now refresh correctly after partial updates.
+
 ## v1.3.1 (2/1/2026) Raid Items + Overlay Stability
 - Raid bring-in items now respect the selected map and remaining objective progress.
-- Overlay toggle now persists across game restarts; turning it off resets OCR state.
+- Overlay close control added with click-out and Esc support.
+- Overlay toggle is session-only (full app restarts reset it).
+- Overlay UI refinements and spacing adjustments in the dashboard header.
+- Raid bring-in counts for kill-with gear objectives now show 1 (bring-in) instead of kill totals.
 - Updated quest key requirements for room-locked objectives and bring-in keys.
 
 ## v1.3.0 (1/30/2026) Performance & Profile Flow

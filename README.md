@@ -17,7 +17,9 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 - Next Tasks recommendations that factor in item needs and progression paths.
 - PvP/PvE modes with separate progress (shared username/edition).
 - Mode selection auto-picks PvP/PvE when only one profile exists; profile creation uses a lightweight popup.
-- Overlay toggle persists across game restarts; turning it off resets OCR state.
+- Overlay toggle is session-only; restarting the app resets it.
+- Overlay close control supports click-out and Esc to dismiss.
+- Guided auto sync in onboarding is temporarily disabled (manual setup only).
 - Update checker tied to GitHub Releases with in-app download/install for signed builds.
 
 ## Download and Install

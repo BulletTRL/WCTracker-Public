@@ -102,7 +102,12 @@ This document captures our intent, constraints, and decisions to keep any displa
 - OCR warnings are filtered from diagnostics to reduce noise.
 
 ## Operational Notes (v1.3.1)
-- Overlay toggle persists across game restarts; switching it off resets OCR state.
+- Overlay toggle is session-only (full app restarts reset it).
+- Overlay can be closed via click-out or Esc from the overlay view.
+
+## Operational Notes (v1.3.2)
+- Overlay close hint is shown inside the overlay panel (top-right).
+- "New quests unlocked" popup is suppressed in overlay mode.
 
 ## RatScanner Review (Pending Sources)
 ## RatScanner Review (Source-Based Summary)
