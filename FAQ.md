@@ -1,7 +1,10 @@
 ﻿# FAQ
 
 ## Is WC Tracker offline?
-Yes. It stores everything locally and does not require accounts or servers.
+Progress is stored locally, but login is required to access the app. There is no cloud progress sync yet.
+
+## Do I need an account?
+Yes. You can sign in with your username or email and password. Account management is handled on the website for now.
 
 ## Where is my data stored?
 Local user data is under user/ (ignored by git), including progress and quest overrides.

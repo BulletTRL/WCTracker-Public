@@ -1,4 +1,11 @@
 # Release Notes
+## v1.3.3 (2/14/2026) Auth Gate + Session Logging
+- New login gate: sign in before the app renders (username or email + password).
+- Save Login Info now remembers the username only; no auto-login on restart.
+- Clearer login feedback (offline errors, short-password message, rate-limit cooldown).
+- Login/logout events are now logged for account activity tracking, including app close/quit.
+- App now starts maximized and keeps the login flow clean on Ctrl+R reloads.
+- Resources + Account controls are grouped at the bottom of the index menu.
 ## v1.3.2 (2/8/2026) Overlay Tweaks + Recommendations
 - Guided auto sync in onboarding is temporarily disabled (manual setup only).
 - Overlay close hint moved into the overlay panel (top-right, visible area).

@@ -1,6 +1,6 @@
 # WC Tracker
 
-WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. It focuses on local progress, quest dependency clarity, and item planning for Kappa progression. No accounts, no servers.
+WC Tracker is an Escape from Tarkov quest tracker built with Electron. It focuses on local progress, quest dependency clarity, and item planning for Kappa progression. Progress stays on your device, with a login gate required to access the app.
 
 ## Highlights
 - Quest tracker with filters, quest details, and quick actions.
@@ -21,6 +21,7 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 - Overlay close control supports click-out and Esc to dismiss.
 - Guided auto sync in onboarding is temporarily disabled (manual setup only).
 - Update checker tied to GitHub Releases with in-app download/install for signed builds.
+- Login gate protects access before the app loads.
 
 ## Download and Install
 - Download the latest Windows installer from Releases:
@@ -33,15 +34,16 @@ WC Tracker is an offline Escape from Tarkov quest tracker built with Electron. I
 - Releases must include the installer, latest.yml, and blockmap assets for updates to succeed.
 
 ## Getting Started
-1) Launch the app and pick PvP or PvE.
-2) Complete onboarding (callsign, level, edition, starter quests).
-3) Use filters, the quest tree, item tracker, and hideout tracker to plan progression.
+1) Launch the app and sign in.
+2) Pick PvP or PvE.
+3) Complete onboarding (callsign, level, edition, starter quests).
+4) Use filters, the quest tree, item tracker, and hideout tracker to plan progression.
 
 ## Support Diagnostics (Hidden)
 For troubleshooting, click the page title 5 times and press Ctrl/Cmd+Shift+D to open the diagnostics console.
 
 ## Data and Privacy
-All progress is stored locally in JSON files. No accounts or servers are required.
+All progress is stored locally in JSON files. Login is required to access the app, and authentication uses WC Tracker services for account verification and login activity logging. Progress sync is still local-only.
 
 ## Documentation
 - Release notes: public_repo/RELEASES.md

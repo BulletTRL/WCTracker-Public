@@ -1,5 +1,23 @@
 # Dev Log (Discord)
 
+## 2/12/2026 - WC Tracker v1.3.3
+Changes:
+- Added a Supabase-backed login gate (username + password) before the app UI appears.
+- Login now requires sign-in on launch unless Save Login Info is enabled (username only).
+- Added dev-only auth toggles for bypass/force when testing login flows.
+- Start app maximized on launch.
+- Preserve login on refresh with a reload overlay.
+- Refined the side menu layout to group resources + account controls at the bottom.
+- Add login event logging via Supabase (app-driven inserts).
+- Do not auto-login on app restart; only remember usernames when toggled.
+- Clarify short password error message on login.
+- Add login rate limiting cooldown after repeated failures.
+- Surface a clear offline error when login service is unreachable.
+- Log login/logout events directly from the app for account activity tracking.
+- App close/quit now logs logout events before the window shuts down.
+- Make login error text slightly red for clarity.
+- Bump app version to 1.3.3 for release.
+
 ## 2/8/2026 - WC Tracker v1.3.2
 Changes:
 - Raid bring-in items respect map selection and objective progress (remaining counts).
@@ -640,3 +658,5 @@ App + data:
 - Pinned images close button now aligns to equal top/right margins with a circular frame.
 - Quest sync preview now stays solid during capture and remains anchored to the left of the cursor.
 - Quest sync OCR worker now auto-retries after worker crashes to prevent postMessage errors.
+- App close now triggers a logout log before the window shuts down.
+- App quit now waits for a logout log on all exit paths (menu quit, Alt+F4, shutdown).

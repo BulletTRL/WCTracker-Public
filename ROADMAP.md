@@ -2,17 +2,10 @@
 
 This is a lightweight roadmap based on current plans and beta feedback. Priorities can shift.
 
-## Recently Completed
-- Overlay base window with watermark for visibility
-- App header indicator for Tarkov running status
-- OCR-based PvP/PvE mode detection from the hideout version text
-- Guided onboarding quest sync with overlay OCR capture
-- Dashboard render performance pass with synced item counts
-- Mode selection auto-pick for single-profile users + lightweight profile creation prompt
-- Raid bring-in items now respect map selection and objective progress (remaining counts)
-- Overlay toggle persists across game restarts and can reset OCR when switched off
-
 ## Active (Soon)
+- Password reset flow (email)
+- Website account portal for username/email management
+- Two-factor authentication groundwork
 - All Items view (search item, see requirements, rewards, barters, hideout use, and description)
 - Overlay for displaying item requirements
 - In-raid overlay toggle (Ctrl+Shift+O) with a full interactive view for single-monitor users
@@ -20,7 +13,6 @@ This is a lightweight roadmap based on current plans and beta feedback. Prioriti
 - PvP prestige flow (hide prestige quests until the next threshold)
 
 ## Backlog
-- Server sided login for non-beta prevention
 - Website for beta access + whitelist application
 - Installer UI/branding polish (NSIS styling, visuals, and copy)
 - Auto-rotating data backups (5-slot history with version/date metadata) plus restore/export selection UI
