@@ -109,6 +109,10 @@ This document captures our intent, constraints, and decisions to keep any displa
 - Overlay close hint is shown inside the overlay panel (top-right).
 - "New quests unlocked" popup is suppressed in overlay mode.
 
+## Operational Notes (v1.3.4)
+- Diagnostics remain reachable from auth-locked startup for support triage.
+- Overlay OCR preview box is hidden during guided onboarding OCR tuning.
+
 ## RatScanner Review (Pending Sources)
 ## RatScanner Review (Source-Based Summary)
 This summary is based only on their public documentation and is not an endorsement or a compliance guarantee.

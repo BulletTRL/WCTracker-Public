@@ -19,7 +19,7 @@ WC Tracker is an Escape from Tarkov quest tracker built with Electron. It focuse
 - Mode selection auto-picks PvP/PvE when only one profile exists; profile creation uses a lightweight popup.
 - Overlay toggle is session-only; restarting the app resets it.
 - Overlay close control supports click-out and Esc to dismiss.
-- Guided auto sync in onboarding is temporarily disabled (manual setup only).
+- Guided auto sync in onboarding is enabled again (OCR-based; currently being tuned).
 - Update checker tied to GitHub Releases with in-app download/install for signed builds.
 - Login gate protects access before the app loads.
 

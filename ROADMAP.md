@@ -3,12 +3,12 @@
 This is a lightweight roadmap based on current plans and beta feedback. Priorities can shift.
 
 ## Active (Soon)
+- Guided onboarding OCR matching stabilization for multi-line quest titles
 - Password reset flow (email)
 - Website account portal for username/email management
 - Two-factor authentication groundwork
 - All Items view (search item, see requirements, rewards, barters, hideout use, and description)
-- Overlay for displaying item requirements
-- In-raid overlay toggle (Ctrl+Shift+O) with a full interactive view for single-monitor users
+- Active Overlay for displaying item requirements
 - Debounced save pipeline with forced flush on close and critical actions
 - PvP prestige flow (hide prestige quests until the next threshold)
 

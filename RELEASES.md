@@ -1,4 +1,12 @@
 # Release Notes
+## v1.3.4 (2/17/2026) Auth Access + Onboarding OCR Stability
+- App access now reads `access_tier` directly with clearer denied/unreadable account messages.
+- Auth/login panel controls and submit flow are stable again during startup and reload.
+- Diagnostics console is available from the auth gate for startup issue triage.
+- Guided onboarding auto sync is re-enabled, with OCR diagnostics and capture-area tuning.
+- Onboarding OCR preview box is hidden temporarily while matching quality is finalized.
+- Production DevTools auto access is disabled again after the auth debugging pass.
+
 ## v1.3.3 (2/14/2026) Auth Gate + Session Logging
 - New login gate: sign in before the app renders (username or email + password).
 - Save Login Info now remembers the username only; no auto-login on restart.

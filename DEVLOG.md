@@ -1,5 +1,19 @@
 # Dev Log (Discord)
 
+## 2/17/2026 - WC Tracker v1.3.4
+Changes:
+- Restored diagnostics access from auth-locked startup using `Ctrl/Cmd+Shift+D` fallback wiring.
+- Fixed duplicate diagnostics panel markup that could break debug element targeting.
+- Kept diagnostics available while auth gate is visible for startup issue triage.
+- Hardened auth titlebar window controls to remain clickable (`no-drag` + pointer events).
+- Removed auth submit guard that blocked login submission in overlay query state.
+- Updated app access parsing to read `access_tier` only and allow elevated tiers.
+- Added clearer account access errors when profile data is unreadable or access is denied.
+- Restored guided onboarding auto sync flow and OCR diagnostics paths for startup testing.
+- Tuned onboarding OCR capture area sizing (height + width) for split-line quest names.
+- Hid the onboarding OCR preview box while guided OCR tuning continues.
+- Disabled production DevTools access again after auth troubleshooting.
+
 ## 2/12/2026 - WC Tracker v1.3.3
 Changes:
 - Added a Supabase-backed login gate (username + password) before the app UI appears.
@@ -17,6 +31,12 @@ Changes:
 - App close/quit now logs logout events before the window shuts down.
 - Make login error text slightly red for clarity.
 - Bump app version to 1.3.3 for release.
+- Restrict app access by account role (beta, beta_member, developer, advisor, manager).
+- Cleaned roadmap active items to remove already-completed overlay entries.
+- Added role alias support (Beta/beta) for app access checks.
+- Auth titlebar drag region now spans the full top area without style changes.
+- Added auth runtime error surfacing on the login panel for build debugging.
+- Bump dev target version to 1.3.4.
 
 ## 2/8/2026 - WC Tracker v1.3.2
 Changes:
