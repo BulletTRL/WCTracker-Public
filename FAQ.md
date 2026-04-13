@@ -1,13 +1,19 @@
 ﻿# FAQ
 
 ## Is WC Tracker offline?
-Progress is stored locally, but login is required to access the app. There is no cloud progress sync yet.
+Progress is stored locally, but login and published app content require WC Tracker services. There is no cloud progress sync yet.
 
 ## Do I need an account?
 Yes. You can sign in with your username or email and password. Account management is handled on the website for now.
 
 ## Where is my data stored?
-Local user data is under user/ (ignored by git), including progress and quest overrides.
+Local user data is stored on your device, including progress and quest overrides. Published quest/item/hideout/achievement content is loaded from WC Tracker's remote app-data service after login.
+
+## Why does the app need the remote data service?
+WC Tracker now ships app content through a published remote manifest so quest data, item data, images, achievements, and hideout requirements can be updated without rebuilding the Electron app.
+
+## What happens if remote app data cannot load?
+The app should show a clear remote-data error instead of loading stale migrated data.
 
 ## Does it support Kappa tracking?
 Yes. Kappa-required quests are tracked and used by the recommendations and gating rules.

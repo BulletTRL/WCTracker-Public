@@ -17,11 +17,13 @@ WC Tracker is an Escape from Tarkov quest tracker built with Electron. It focuse
 - Next Tasks recommendations that factor in item needs and progression paths.
 - PvP/PvE modes with separate progress (shared username/edition).
 - Mode selection auto-picks PvP/PvE when only one profile exists; profile creation uses a lightweight popup.
+- Remote app-data delivery for quests, items, achievements, hideout data, layout, and images after login.
 - Overlay toggle is session-only; restarting the app resets it.
 - Overlay close control supports click-out and Esc to dismiss.
 - Guided auto sync in onboarding is enabled again (OCR-based; currently being tuned).
 - Update checker tied to GitHub Releases with in-app download/install for signed builds.
 - Login gate protects access before the app loads.
+- Saved login info can remember credentials for faster sign-in, but saved passwords stay hidden on reopen.
 
 ## Download and Install
 - Download the latest Windows installer from Releases:
@@ -43,7 +45,7 @@ WC Tracker is an Escape from Tarkov quest tracker built with Electron. It focuse
 For troubleshooting, click the page title 5 times and press Ctrl/Cmd+Shift+D to open the diagnostics console.
 
 ## Data and Privacy
-All progress is stored locally in JSON files. Login is required to access the app, and authentication uses WC Tracker services for account verification and login activity logging. Progress sync is still local-only.
+Progress is stored locally in JSON files. Login is required to access the app, and authentication uses WC Tracker services for account verification and login activity logging. App content is delivered through published remote datasets after login. Progress sync is still local-only.
 
 ## Documentation
 - Release notes: public_repo/RELEASES.md

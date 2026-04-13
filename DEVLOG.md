@@ -1,5 +1,39 @@
 # Dev Log (Discord)
 
+## 4/2/2026 - WC Tracker v1.3.6
+Changes:
+- Added the remote app-data publish pipeline for Supabase Storage and release metadata tables.
+- Published the first remote app-data snapshot for testing: 471 quests, 471 quest directory entries, 483 layout overrides, and 3,680 images.
+- Switched runtime quest/layout/app-data image loading to remote-only when a manifest URL is configured.
+- Kept remote app-data sync gated behind successful login so no app-data calls happen pre-auth.
+- Added dev-only normal Electron DevTools for `npm start` while keeping packaged builds locked down.
+- Added `/network` to the hidden diagnostics console to surface auth and remote-manifest traffic in built apps.
+- Enforced remote-only startup for migrated app data and surfaced a hard error when required remote datasets are unavailable.
+- Fixed the renderer remote-manifest env reference and preserved auth sessions across in-app refresh/reload.
+- Fixed main-process local env loading so remote manifest config is available during startup sync in `npm start`.
+- Reduced remote startup and quest click lag by caching unchanged manifest datasets and lazy-loading quest detail content.
+- Archived the legacy local quest datasets, quest images, and migrated quest metadata under `Archives/` so stale runtime fallbacks are easier to detect while preserving the old source tree for reference.
+- Added compact dev-console network diagnostics so completed renderer and remote-manifest calls show their target and duration in a readable one-line format.
+- Expanded the remote app-data schema/publisher to include achievements, hideout, and item index datasets.
+- Added upload retry/backoff to remote app-data publishing so transient Supabase storage failures do not abort the whole publish.
+- Moved remaining app-content source files into `Archives/`, leaving live `data/` with only packaged branding assets.
+- Rewired achievements, hideout, level icons, trader portraits, and item tracker sources away from live `data/...` paths.
+- Moved item tracker ignored-item persistence into user data so remote source data and user overrides stay separated.
+- Harden remote publish and remembered login.
+- Bump package metadata to v1.3.6 for release builds.
+- Protect saved login passwords from reveal/copy on reopen.
+- Refresh internal and public docs for the v1.3.6 remote app-data release.
+- Fix migrated quest tree rendering by unwrapping remote layout overrides and resolving trader portraits through the remote image index.
+- Update the roadmap with the v1.3.6 release gate, completed migration work, and post-release follow-ups.
+
+## 2/18/2026 - WC Tracker v1.3.5
+Changes:
+- Fix packaged onboarding OCR module resolution and packaging exclusions.
+- Bypass auth gate for overlay windows so overlay re-open does not require re-login.
+- Prevent onboarding auto-completing Lightkeeper path quests.
+- Fix BTR dependency cycles from unlock edges.
+- Add missing Fence quest Friend Among Strangers.
+
 ## 2/17/2026 - WC Tracker v1.3.4
 Changes:
 - Restored diagnostics access from auth-locked startup using `Ctrl/Cmd+Shift+D` fallback wiring.
@@ -13,6 +47,9 @@ Changes:
 - Tuned onboarding OCR capture area sizing (height + width) for split-line quest names.
 - Hid the onboarding OCR preview box while guided OCR tuning continues.
 - Disabled production DevTools access again after auth troubleshooting.
+- Fix packaged login by adding Supabase REST auth fallback when SDK is unavailable.
+- Forced onboarding/overlay OCR preview box hidden at main-process level.
+- Added packaged module fallback resolution for `wasm-feature-detect` to prevent startup crashes in built installers.
 
 ## 2/12/2026 - WC Tracker v1.3.3
 Changes:
@@ -680,3 +717,16 @@ App + data:
 - Quest sync OCR worker now auto-retries after worker crashes to prevent postMessage errors.
 - App close now triggers a logout log before the window shuts down.
 - App quit now waits for a logout log on all exit paths (menu quit, Alt+F4, shutdown).
+- Fixed duplicate quest completion logic when multiple objective lines reference the same item requirement.
+- Added explicit objective index mapping in affected quest JSON files and renderer logic to prevent duplicate item-linked completion counting.
+- Chumming now tracks each stash objective independently (3/3 per location) instead of a single combined 9-count marker.
+- Enabled explicit per-objective tracking for Lend-Lease Part 1, Vitamins Part 1, Disease History, and Sew it Good Part 3 to prevent grouped counters.
+- Fixed quest tree double-click behavior to use normal path highlighting and avoid faded/invisible connector lines.
+- Improved startup resilience by extending app load timeout and adding a one-time automatic retry before showing a timeout failure.
+- Fixed quest tree popover complete/incomplete toggles so failed quests can be re-completed in one click and invalid IDs are safely ignored.
+- Added missing Fence quest references (Establish Contact and Immunity) to complete previous/unlocks link integrity.
+- Added automated quest dataset validation script and wired it into pre-dist build steps to block broken references/mappings before releases.
+
+
+
+

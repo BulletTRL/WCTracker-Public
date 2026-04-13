@@ -1,4 +1,21 @@
 # Release Notes
+## v1.3.6 (4/13/2026) Remote Data Migration
+- App content now loads from the published Supabase app-data manifest after login.
+- Quest data, quest directory entries, layout overrides, image index, item index, achievements, and hideout data are published as versioned remote datasets.
+- Legacy app-content source files were moved into `Archives/`; packaged local `data/` now only keeps required branding assets.
+- Startup now fails clearly when required remote datasets are unavailable instead of silently falling back to stale local data.
+- Remote dataset caching reduces startup and quest-detail load time when the manifest has not changed.
+- Diagnostics now include compact network entries so support can see remote calls, targets, and timings.
+- Saved login passwords stay hidden on reopen and cannot be revealed or copied unless the user clears and retypes the password.
+
+## v1.3.5 (2/18/2026) Stability Fixes + Quest Data Cleanup
+- Fixed packaged onboarding OCR module resolution and packaging exclusions.
+- Overlay windows no longer require re-login after the main app is authenticated.
+- Fixed quest completion and dependency issues across Lightkeeper, BTR, Disease History, Chumming, and Lend Lease Part 1.
+- Added missing quest references, including Friend Among Strangers.
+- Improved manual quest-tree completion handling and double-click behavior.
+- Added automated recommendation improvements and missing quest reference coverage.
+
 ## v1.3.4 (2/17/2026) Auth Access + Onboarding OCR Stability
 - App access now reads `access_tier` directly with clearer denied/unreadable account messages.
 - Auth/login panel controls and submit flow are stable again during startup and reload.
