@@ -41,9 +41,6 @@ WC Tracker is an Escape from Tarkov quest tracker built with Electron. It focuse
 3) Complete onboarding (callsign, level, edition, starter quests).
 4) Use filters, the quest tree, item tracker, and hideout tracker to plan progression.
 
-## Support Diagnostics (Hidden)
-For troubleshooting, click the page title 5 times and press Ctrl/Cmd+Shift+D to open the diagnostics console.
-
 ## Data and Privacy
 Progress is stored locally in JSON files. Login is required to access the app, and authentication uses WC Tracker services for account verification and login activity logging. App content is delivered through published remote datasets after login. Progress sync is still local-only.
 
